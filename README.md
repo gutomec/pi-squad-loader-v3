@@ -1,10 +1,37 @@
-# pi-squad-loader-v3 ⚡
+# pi-squad-loader-v3 → Consolidated in pi-squad-loader ⚡
 
-> GSD-PI extension v3: Harness-engineered squad runtime with real validation gates, doom loop detection, Ralph Loop retry, filesystem collaboration, DAG execution, execution traces, and context compaction.
+> **⚠️ Archive Notice:** This repository is no longer maintained. Development continues in [pi-squad-loader](https://github.com/gutomec/pi-squad-loader)
 
-## What is this?
+This was the v3 implementation of the squad loader. It has been consolidated into the main `pi-squad-loader` repository with **zero-configuration auto-discovery**.
 
-A [GSD-PI](https://github.com/mariozechner/pi-coding-agent) extension that adds squad management tools to Pi. Load, activate, dispatch, and run multi-agent squads with full v3 harness engineering.
+## 🎯 Migration to pi-squad-loader
+
+The new version includes everything from v3, plus auto-discovery:
+
+```bash
+# Old (deprecated)
+pi install pi-squad-loader-v3
+
+# New (recommended) — same v3 features + auto-discovery
+pi install pi-squad-loader
+```
+
+## ✨ What's New in the Consolidated Version
+
+- ✅ **Auto-detect GSD** on macOS, Linux, Windows (no GSD_BIN_PATH needed)
+- ✅ **Auto-discover squads** in `~/.squads`, `.squads/`, `~/.gsd/squads`, `.gsd/squads/`
+- ✅ **Zero configuration** — just install and use
+- ✅ **Same v3 features:** validation, doom loop detection, ralph loop, harness, etc.
+- ✅ **Cross-platform** without environment variables
+
+## About This Repository
+
+This repository is kept for:
+- Historical reference
+- Archival purposes
+- Backward compatibility if needed
+
+All new development is in [pi-squad-loader](https://github.com/gutomec/pi-squad-loader). Please update your installations!
 
 ## What's New in v3
 
